@@ -5,8 +5,7 @@ function NewProject() {
 
     const navigate = useNavigate()
     function createProject(project) {
-        project.cost = 0
-        project.services = []
+        project.updates = []
 
         fetch('http://localhost:5000/projects', {
             method: 'POST',
@@ -25,7 +24,7 @@ function NewProject() {
     return ( 
         <div className={styles.newproject_container}>
             <h1>Criar Projeto</h1>
-            <p>Crie seu projeto para depois adicionar os serviços</p>
+            <p>Crie seu projeto para depois adicionar as atualizações</p>
             <ProjectForm handleSubmit={createProject} btnText="Criar Projeto"/>
         </div>
         );
