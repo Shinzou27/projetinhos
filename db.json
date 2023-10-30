@@ -67,6 +67,51 @@
       "cost": 0,
       "services": [],
       "id": 5
+    },
+    {
+      "name": "aa",
+      "category": {
+        "id": "1",
+        "name": "Talentos"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
+    },
+    {
+      "name": "Navia",
+      "category": {
+        "id": "1",
+        "name": "Talentos"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 7
+    },
+    {
+      "name": "Navia1",
+      "category": {
+        "id": "1",
+        "name": "Talentos"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 8
+    },
+    {
+      "name": "Navia2",
+      "category": {
+        "id": "1",
+        "name": "Talentos"
+      },
+      "char_name": "Navia",
+      "aa": "1",
+      "skill": "3",
+      "ult": "2",
+      "books": "1",
+      "cost": 0,
+      "services": [],
+      "id": 9
     }
   ],
   "categories": [
@@ -76,7 +121,7 @@
     },
     {
       "id": 2,
-      "name": "Saving"
+      "name": "Roll"
     },
     {
       "id": 3,
