@@ -6,7 +6,7 @@ function Home() {
     return ( 
         <section className={styles.home_container}>
             <h1>Bem-vindo ao <span>Projetinhos</span>!</h1>
-            <p>Comece a gerenciar seus gachas agora mesmo!</p>
+            <p>Comece a gerenciar seu Genshin agora mesmo!</p>
             <LinkButton to="/newproject" text="Criar Projeto"/>
             <img src={gray} alt="It's Gray" />
         </section>
