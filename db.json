@@ -1,117 +1,66 @@
 {
   "projects": [
     {
-      "name": "Projetinho teste (att)",
+      "name": "NaviaTalentos",
       "category": {
         "id": "1",
         "name": "Talentos"
       },
-      "budget": "27270",
-      "cost": 8100,
-      "services": [
+      "item_name": "Navia",
+      "aa": "1",
+      "skill": "1",
+      "ult": "1",
+      "books": "0",
+      "updates": [
         {
-          "name": "Serviço teste",
-          "cost": "2700",
-          "description": "Testando o serviço",
-          "id": "632f95ee-78b4-41d4-a3f7-612788b1d8d3"
-        },
-        {
-          "name": "Serviço teste 2",
-          "cost": "5400",
-          "description": "Testando novamente",
-          "id": "f18462ea-414c-42be-ac62-179e9ed0dc05"
+          "date": "30/10/2023",
+          "title": "Início do Farm",
+          "description": "Comecei a farmar os itens de talento por ser domingo, continuarei depois da 4.2 lançar",
+          "id": "1c1a3e7f-7802-4165-be3a-3429cabd5cb5"
         }
       ],
-      "id": 1
+      "id": 9
     },
     {
-      "name": "Projetinho teste 2 (att)",
-      "budget": "845643",
-      "category": {
-        "id": "3",
-        "name": "Arma"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "Projetinho teste 3 (att)",
-      "budget": "554236",
+      "name": "NaviaRolls",
       "category": {
         "id": "2",
-        "name": "Saving"
+        "name": "Roll"
       },
-      "cost": 0,
-      "services": [],
-      "id": 3
+      "end_date": "2023-12-19",
+      "welkin": "",
+      "current_primos": "1024",
+      "updates": [],
+      "id": 10,
+      "item_name": "Navia"
     },
     {
-      "name": "Projetinho teste 4 (att)",
-      "budget": "2758846",
+      "name": "NaviaArmas",
       "category": {
         "id": "3",
         "name": "Arma"
       },
-      "cost": 0,
-      "services": [],
-      "id": 4
+      "weaponMaterial_t5": "4",
+      "weaponMaterial_t4": "10",
+      "weaponMaterial_t3": "5",
+      "weaponMaterial_t2": "2",
+      "updates": [],
+      "id": 11,
+      "item_name": "Guarda-Chuva Geo"
     },
     {
-      "name": "Projetinho teste 5 (att)",
-      "budget": "23123122",
+      "name": "NaviaAscensão",
       "category": {
         "id": "4",
         "name": "Ascensão"
       },
-      "cost": 0,
-      "services": [],
-      "id": 5
-    },
-    {
-      "name": "aa",
-      "category": {
-        "id": "1",
-        "name": "Talentos"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 6
-    },
-    {
-      "name": "Navia",
-      "category": {
-        "id": "1",
-        "name": "Talentos"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 7
-    },
-    {
-      "name": "Navia1",
-      "category": {
-        "id": "1",
-        "name": "Talentos"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 8
-    },
-    {
-      "name": "Navia2",
-      "category": {
-        "id": "1",
-        "name": "Talentos"
-      },
-      "char_name": "Navia",
-      "aa": "1",
-      "skill": "3",
-      "ult": "2",
-      "books": "1",
-      "cost": 0,
-      "services": [],
-      "id": 9
+      "item_name": "Navia",
+      "char_level_current": "1",
+      "char_level_future": "90",
+      "char_asc_current": "0",
+      "char_asc_future": "6",
+      "updates": [],
+      "id": 12
     }
   ],
   "categories": [
