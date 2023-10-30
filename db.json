@@ -61,6 +61,27 @@
       "char_asc_future": "6",
       "updates": [],
       "id": 12
+    },
+    {
+      "name": "Talentos da Furina",
+      "category": {
+        "id": "1",
+        "name": "Talentos"
+      },
+      "item_name": "Furina",
+      "aa": "1",
+      "skill": "1",
+      "ult": "1",
+      "books": "74",
+      "updates": [
+        {
+          "date": "30/10/2023",
+          "title": "Terminar de pegar o necessário",
+          "description": "Hoje entrarei no Genshin para farmar os dois últimos livros que preciso",
+          "id": "13b372e6-aea6-46e9-8b36-9f21fefe8e1d"
+        }
+      ],
+      "id": 13
     }
   ],
   "categories": [
