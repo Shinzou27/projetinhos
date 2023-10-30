@@ -5,7 +5,7 @@ import Select from '../form/Select';
 import SubmitButton from '../form/SubmitButton';
 
 import styles from './ProjectForm.module.css'
-import Category from '../types/Category';
+import CategoryForm from '../types/CategoryForm';
 
 function ProjectForm({ handleSubmit, btnText, projectData }) {
 
@@ -72,7 +72,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
                 </>
                 :
                 <>
-                    <Category id={project.category.id - 1} projectData={project} setProjectData={setProject} />
+                    <CategoryForm projectData={project} setProjectData={setProject} />
                     <SubmitButton text={"Finalizar"} />
                 </>
             }
