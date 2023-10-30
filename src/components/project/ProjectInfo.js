@@ -21,6 +21,9 @@ function ProjectInfo({ project }) {
             <p>
                 <span>Nível da Explosão Elemental: </span> {project.ult}
             </p>
+            <p>
+                <span>Quantidade de livros atual: </span> {project.books}
+            </p>
         </div>
 
     const Roll =
