@@ -1,10 +1,10 @@
 import styles from './Home.module.css'
-import gray from '../../img/gray.png'
+import gray from '../../assets/gray.png'
 import LinkButton from '../layout/LinkButton';
+import genshin from '../../assets/genshin_data.json'
 
 function Home() {
-    const characters = ["Albedo", "Alhaitham", "Aloy", "Amber", "Itto", "Baizhu", "Barbara", "Beidou", "Bennett", "Candace", "Chongyun", "Collei", "Cyno", "Dehya", "Diluc", "Diona", "Dori", "Eula", "Faruzan", "Fischl", "Freminet", "Ganyu", "Gorou", "Hu Tao", "Jean", "Kazuha", "Kaeya", "Ayaka", "Ayato", "Kaveh", "Keqing", "Kirara", "Klee", "Sara", "Kuki Shinobu", "Layla", "Lisa", "Lynette", "Lyney", "Mika", "Mona", "Nahida", "Neuvillette", "Nilou", "Ningguang", "Noelle", "Qiqi", "Raiden Shogun", "Razor", "Rosaria", "Kokomi", "Sayu", "Shenhe", "Heizou", "Sucrose", "Tartaglia", "Thoma", "Tighnari", "Traveler", "Venti", "Scaramouche", "Wriothesley", "Xiangling", "Xiao", "Xingqiu", "Xinyan", "Yae Miko", "Yanfei", "Yaoyao", "Yelan", "Yoimiya", "Yun Jin", "Zhongli", "Charlotte", "Furina"];
-    const randomChar = characters[Math.floor(Math.random()*characters.length)];
+    const randomChar = genshin.data[Math.floor(Math.random()*genshin.data.length)].name;
     return ( 
         <section className={styles.home_container}>
             <h1>Bem-vindo ao <span>Projetinhos</span>!</h1>
