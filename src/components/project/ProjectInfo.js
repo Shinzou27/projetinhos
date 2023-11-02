@@ -10,16 +10,16 @@ function ProjectInfo({ project }) {
     const Talent =
         <div>
             <p>
-                <span>Personagem </span> {project.item_name}
+                <span>Personagem: </span> {project.item_name}
             </p>
             <p>
-                <span>Nível do Auto-Attack: </span> {project.aa}
+                <span>Nível do Auto-Attack: </span> {project.aa_1} <span>| Desejado: </span>{project.aa_2}
             </p>
             <p>
-                <span>Nível da Habilidade Elemental: </span> {project.skill}
+                <span>Nível da Habilidade Elemental: </span> {project.skill_1} <span>| Desejado: </span>{project.skill_2}
             </p>
             <p>
-                <span>Nível da Explosão Elemental: </span> {project.ult}
+                <span>Nível da Explosão Elemental: </span> {project.ult_1} <span>| Desejado: </span>{project.ult_2}
             </p>
             <p>
                 <span>Quantidade de livros atual: </span> {project.books}
@@ -35,7 +35,7 @@ function ProjectInfo({ project }) {
                 <span>Data do fim do banner: </span> {parseDate(project.end_date)}
             </p>
             <p>
-                <span>Possui bênção? </span> {project.welkin}
+                <span>Possui bênção? </span> {project.welkin == true ? 'Sim' : 'Não'}
             </p>
             <p>
                 <span>Gemas atualmente: </span> {project.current_primos}
