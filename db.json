@@ -7,9 +7,12 @@
         "name": "Talentos"
       },
       "item_name": "Navia",
-      "aa": "1",
-      "skill": "1",
-      "ult": "1",
+      "aa_1": "1",
+      "skill_1": "1",
+      "ult_1": "1",
+      "aa_2": "10",
+      "skill_2": "10",
+      "ult_2": "10",
       "books": "0",
       "updates": [
         {
@@ -29,7 +32,7 @@
       },
       "end_date": "2023-12-19",
       "welkin": "",
-      "current_primos": "1024",
+      "current_primos": "2429",
       "updates": [],
       "id": 10,
       "item_name": "Navia"
@@ -69,9 +72,12 @@
         "name": "Talentos"
       },
       "item_name": "Furina",
-      "aa": "1",
-      "skill": "1",
-      "ult": "1",
+      "aa_1": "1",
+      "skill_1": "1",
+      "ult_1": "1",
+      "aa_2": "6",
+      "skill_2": "10",
+      "ult_2": "10",
       "books": "74",
       "updates": [
         {
@@ -82,6 +88,23 @@
         }
       ],
       "id": 13
+    },
+    {
+      "name": "Charlotte",
+      "category": {
+        "id": "1",
+        "name": "Talentos"
+      },
+      "item_name": "Charlotte",
+      "aa_1": "1",
+      "aa_2": "6",
+      "skill_1": "1",
+      "skill_2": "8",
+      "ult_1": "1",
+      "ult_2": "8",
+      "books": "12",
+      "updates": [],
+      "id": 14
     }
   ],
   "categories": [
