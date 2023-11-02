@@ -60,6 +60,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
                         name="name"
                         placeholder="Insira o nome do projeto"
                         handleOnChange={handleChange}
+                        value={project.name ? project.name : ''}
                     />
                     <Select
                         name="category_id"
