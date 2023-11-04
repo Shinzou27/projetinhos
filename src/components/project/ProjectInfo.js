@@ -1,4 +1,6 @@
+import genshin from '../../assets/genshin_data.json'
 function ProjectInfo({ project }) {
+    console.log(genshin.data[23]);
     function parseDate(date) {
         const toFormat = new Date(date);
         let day;
@@ -7,29 +9,51 @@ function ProjectInfo({ project }) {
         toFormat.getMonth() < 10 ? month = "0" + toFormat.getMonth() : month = toFormat.getMonth();
         return day + "/" + month + "/" + toFormat.getFullYear();
     }
+    function calcTalentResin(current, planned) {
+        if (current == 1) {
+            current = 2;
+        }
+        const runCost = 20;
+        const upgradeCost = [3, 9, 21, 39, 66, 102, 156, 264, 408];
+        const runPrize = 9;
+        return parseInt(((upgradeCost[parseInt(planned) - 2]) - (upgradeCost[parseInt(current) - 1])) / runPrize) * runCost;
+    }
     const Talent =
-        <div>
-            <p>
-                <span>Personagem: </span> {project.item_name}
-            </p>
-            <p>
-                <span>Nível do Auto-Attack: </span> {project.aa_1} <span>| Desejado: </span>{project.aa_2}
-            </p>
-            <p>
-                <span>Nível da Habilidade Elemental: </span> {project.skill_1} <span>| Desejado: </span>{project.skill_2}
-            </p>
-            <p>
-                <span>Nível da Explosão Elemental: </span> {project.ult_1} <span>| Desejado: </span>{project.ult_2}
-            </p>
-            <p>
-                <span>Quantidade de livros atual: </span> {project.books}
-            </p>
-        </div>
+        <>
+            <div>
+                <p>
+                    <span>Personagem: </span> {project.item_name}
+                </p>
+                <p>
+                    <span>Nível do Auto-Attack: </span> {project.aa_1} <span>| Desejado: </span>{project.aa_2}
+                </p>
+                <p>
+                    <span>Nível da Habilidade Elemental: </span> {project.skill_1} <span>| Desejado: </span>{project.skill_2}
+                </p>
+                <p>
+                    <span>Nível da Explosão Elemental: </span> {project.ult_1} <span>| Desejado: </span>{project.ult_2}
+                </p>
+                <p>
+                    <span>Quantidade de livros atual: </span> {project.books}
+                </p>
+            </div>
+            <hr />
+            <div>
+                <p>
+                    <span>Resina necessária: </span> {
+                          calcTalentResin(project.aa_1, project.aa_2)
+                        + calcTalentResin(project.skill_1, project.skill_2)
+                        + calcTalentResin(project.ult_1, project.ult_2)
+                        - project.books
+                    }
+                </p>
+            </div>
+        </>
 
     const Roll =
         <div>
             <p>
-                <span>Personagem </span> {project.item_name}
+                <span>Personagem: </span> {project.item_name}
             </p>
             <p>
                 <span>Data do fim do banner: </span> {parseDate(project.end_date)}
@@ -64,7 +88,7 @@ function ProjectInfo({ project }) {
     const Ascension =
         <div>
             <p>
-                <span>Nome do personagem: </span> {project.item_name}
+                <span>Personagem: </span> {project.item_name}
             </p>
             <p>
                 <span>Nível atual: </span> {project.char_level_current}
