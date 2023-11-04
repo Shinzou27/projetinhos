@@ -18,6 +18,11 @@ function ProjectInfo({ project }) {
         const runPrize = 9;
         return parseInt(((upgradeCost[parseInt(planned) - 2]) - (upgradeCost[parseInt(current) - 1])) / runPrize) * runCost;
     }
+    function rollsMeanNeeded(end_date, welkin, current_primos) {
+        const today = new Date('now');
+        const endDate = new Date('end_date')
+        console.log(today, endDate);
+    }
     const Talent =
         <>
             <div>
@@ -40,8 +45,9 @@ function ProjectInfo({ project }) {
             <hr />
             <div>
                 <p>
-                    <span>Resina necessária: </span> {
-                          calcTalentResin(project.aa_1, project.aa_2)
+                    <span>Resina necessária: </span>
+                    {
+                        calcTalentResin(project.aa_1, project.aa_2)
                         + calcTalentResin(project.skill_1, project.skill_2)
                         + calcTalentResin(project.ult_1, project.ult_2)
                         - project.books
@@ -51,20 +57,29 @@ function ProjectInfo({ project }) {
         </>
 
     const Roll =
-        <div>
-            <p>
-                <span>Personagem: </span> {project.item_name}
-            </p>
-            <p>
-                <span>Data do fim do banner: </span> {parseDate(project.end_date)}
-            </p>
-            <p>
-                <span>Possui bênção? </span> {project.welkin == true ? 'Sim' : 'Não'}
-            </p>
-            <p>
-                <span>Gemas atualmente: </span> {project.current_primos}
-            </p>
-        </div>;
+        <>
+            <div>
+                <p>
+                    <span>Personagem: </span> {project.item_name}
+                </p>
+                <p>
+                    <span>Data do fim do banner: </span> {parseDate(project.end_date)}
+                </p>
+                <p>
+                    <span>Possui bênção? </span> {project.welkin == true ? 'Sim' : 'Não'}
+                </p>
+                <p>
+                    <span>Gemas atualmente: </span> {project.current_primos}
+                </p>
+            </div>
+            <hr />
+            <div>
+                <p>
+                    <span> Média necessária: </span>
+                    {}
+                </p>
+            </div>
+        </>;
 
     const Weapon =
         <div>

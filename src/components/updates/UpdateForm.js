@@ -15,7 +15,6 @@ function UpdateForm( { handleSubmit, textBtn, projectData }) {
     }
     function submit(e) {
         e.preventDefault()
-        console.log(update);
         projectData.updates.push(update)
         handleSubmit(projectData)
     }

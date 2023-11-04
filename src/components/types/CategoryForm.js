@@ -7,7 +7,6 @@ function CategoryForm({ projectData, setProjectData }) {
             setProjectData({ ...projectData, [e.target.name]: e.target.checked })
         }
         setProjectData({ ...projectData, [e.target.name]: e.target.value })
-        console.log(projectData);
     }
     const Talent =
         <div>
