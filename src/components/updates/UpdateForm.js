@@ -9,7 +9,7 @@ function UpdateForm( { handleSubmit, textBtn, projectData }) {
         const toFormat = new Date(date);
         let day;
         let month;
-        toFormat.getDate() < 10 ? day = "0" + toFormat.getDate() : day = toFormat.getDate();
+        toFormat.getUTCDate() < 10 ? day = "0" + toFormat.getUTCDate() : day = toFormat.getUTCDate();
         toFormat.getMonth()+1 < 10 ? month = "0" + toFormat.getMonth()+1 : month = toFormat.getMonth()+1;
         return day + "/" + month + "/" + toFormat.getFullYear();
     }
