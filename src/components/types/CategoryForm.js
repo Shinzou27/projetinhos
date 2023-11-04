@@ -1,20 +1,34 @@
 import Input from '../form/Input'
+import Select from '../form/Select'
 import styles from './CategoryForm.module.css'
+import genshin from '../../assets/genshin_data.json'
 
 function CategoryForm({ projectData, setProjectData }) {
+    function getCharNames() {
+        const arr = [];
+        genshin.data.map((character, index) => {
+            arr.push({
+                id: index,
+                name: character.name
+            });
+        })
+        return arr;
+    }
+    const characters = getCharNames();
     function handleChange(e) {
-        if(e.target.type == 'checkbox') {
+        if (e.target.type == 'checkbox') {
             setProjectData({ ...projectData, [e.target.name]: e.target.checked })
+        } else if (e.target.type == 'select') {
+            setProjectData({ ...projectData, [e.target.name]: e.target.options[e.target.selectedIndex].text })
         }
         setProjectData({ ...projectData, [e.target.name]: e.target.value })
     }
     const Talent =
         <div>
-            <Input
-                type="text"
+            <Select
                 text="Insira o nome do personagem"
                 name="item_name"
-                placeholder="Nome do personagem"
+                options={characters}
                 handleOnChange={handleChange}
                 value={projectData.item_name ? projectData.item_name : ''}
             />
@@ -84,11 +98,10 @@ function CategoryForm({ projectData, setProjectData }) {
 
     const Roll =
         <div>
-            <Input
-                type="text"
+            <Select
                 text="Insira o nome do personagem"
                 name="item_name"
-                placeholder="Nome do personagem"
+                options={characters}
                 handleOnChange={handleChange}
                 value={projectData.item_name ? projectData.item_name : ''}
             />
@@ -164,11 +177,10 @@ function CategoryForm({ projectData, setProjectData }) {
 
     const Ascension =
         <div>
-            <Input
-                type="text"
+            <Select
                 text="Insira o nome do personagem"
                 name="item_name"
-                placeholder="Nome do personagem"
+                options={characters}
                 handleOnChange={handleChange}
                 value={projectData.item_name ? projectData.item_name : ''}
             />
