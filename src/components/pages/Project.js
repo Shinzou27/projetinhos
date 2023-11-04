@@ -19,7 +19,6 @@ function Project() {
     const [showUpdateForm, setShowUpdateForm] = useState(false)
     const [message, setMessage] = useState()
     const [type, setType] = useState()
-    console.log(project);
     useEffect(() => {
         setTimeout(() => {
             fetch(`http://localhost:5000/projects/${id}`, {
