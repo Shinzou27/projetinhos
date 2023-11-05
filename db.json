@@ -105,6 +105,23 @@
       "books": "12",
       "updates": [],
       "id": 14
+    },
+    {
+      "name": "Time Yoimiya",
+      "category": {
+        "id": "1",
+        "name": "Talentos"
+      },
+      "item_name": "Yun Jin",
+      "aa_1": "1",
+      "aa_2": "1",
+      "skill_1": "6",
+      "skill_2": "6",
+      "ult_1": "8",
+      "ult_2": "10",
+      "books": "15",
+      "updates": [],
+      "id": 15
     }
   ],
   "categories": [
