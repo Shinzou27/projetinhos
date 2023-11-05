@@ -1,27 +1,19 @@
 import Input from '../form/Input'
 import Select from '../form/Select'
 import styles from './CategoryForm.module.css'
-import genshin from '../../assets/genshin_data.json'
+import {getCharNames} from '../../assets/helpers'
 
 function CategoryForm({ projectData, setProjectData }) {
-    function getCharNames() {
-        const arr = [];
-        genshin.data.map((character, index) => {
-            arr.push({
-                id: index,
-                name: character.name
-            });
-        })
-        return arr;
-    }
+    
     const characters = getCharNames();
     function handleChange(e) {
         if (e.target.type == 'checkbox') {
             setProjectData({ ...projectData, [e.target.name]: e.target.checked })
-        } else if (e.target.type == 'select') {
+        } else if (e.target.tagName == 'SELECT') {
             setProjectData({ ...projectData, [e.target.name]: e.target.options[e.target.selectedIndex].text })
+        } else {
+            setProjectData({ ...projectData, [e.target.name]: e.target.value })
         }
-        setProjectData({ ...projectData, [e.target.name]: e.target.value })
     }
     const Talent =
         <div>
