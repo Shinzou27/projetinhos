@@ -1,5 +1,5 @@
-import genshin from './genshin_data.json'
 
+import genshin from './genshin_data.json'
 export function getByName(name) {
     return genshin.data.filter((char) => char.name === name)[0];
 }
@@ -13,4 +13,8 @@ export function getCharNames() {
         });
     })
     return arr;
+}
+
+export function getElementColor(element) {
+    return genshin.colors[element];
 }
