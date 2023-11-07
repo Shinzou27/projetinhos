@@ -1,6 +1,7 @@
-import { getByName, getCharNames } from "../../assets/helpers";
+import { getByName, getElementColor } from "../../assets/helpers";
 function ProjectInfo({ project }) {
     const character = getByName(project.item_name) || getByName(`Hu Tao`);
+    const elementColor = getElementColor(character.element); //to do later
     function parseDate(date) {
         const toFormat = new Date(date);
         let day;
